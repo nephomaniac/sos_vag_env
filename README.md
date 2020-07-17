@@ -31,6 +31,7 @@ Step#4) Setup SSH for git, etc..
     Vagrant is set to forward the keys so no need to copy to the VM. 
     This requires adding the key(s) you want added to your local ssh-agent. 
     Example exporting a key named 'id_rsa' (this key should be ~/.ssh/ on your host machine)
+    
     eval \"$(ssh-agent -s)\"
     ssh-add ~/.ssh/id_rsa" >&2
 
@@ -59,14 +60,16 @@ Step #6) Build sos
     sos init && sos bld -t raptor
     
     
-Next steps: 
+Managing the VM:
     Using vagrant commands, the box can be:
     reloaded (w/ or w/o --provision) to apply new Vagrantfile config. 
     suspended
     provisioned (ie to test changes or reapply things run in bootstrap.sh)
     destroyed - clean removal of all the artifacts. Just 'vagrant up' again to start with a clean new build env when you're ready. 
   
+Next Steps, things to try:
     Try syncing with a cloned sos dir on the host via the Vagrantfile
+    
     Adjust the boostrap.sh to add commands to sos init and bld upon vm launch. 
     
     
