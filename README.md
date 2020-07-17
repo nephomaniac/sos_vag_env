@@ -60,6 +60,12 @@ Step #6) Build sos
     
     
 Next steps: 
+    Using vagrant commands, the box can be:
+    reloaded (w/ or w/o --provision) to apply new Vagrantfile config. 
+    suspended
+    provisioned (ie to test changes or reapply things run in bootstrap.sh)
+    destroyed - clean removal of all the artifacts. Just 'vagrant up' again to start with a clean new build env when you're ready. 
+  
     Try syncing with a cloned sos dir on the host via the Vagrantfile
     Adjust the boostrap.sh to add commands to sos init and bld upon vm launch. 
     
