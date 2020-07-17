@@ -68,7 +68,7 @@ Managing the VM:
     destroyed - clean removal of all the artifacts. Just 'vagrant up' again to start with a clean new build env when you're ready. 
   
 Next Steps, things to try:
-    **Try syncing with a cloned sos dir on the host via the Vagrantfile
-    **Adjust the boostrap.sh to add commands to sos init and bld upon vm launch. 
+    - Try syncing with a cloned sos dir on the host via the Vagrantfile
+    - Adjust the boostrap.sh to add commands to sos init and bld upon vm launch. 
     
     
