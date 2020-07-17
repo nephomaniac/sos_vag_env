@@ -71,6 +71,7 @@ sos bld -t raptor
 ```  
     
 ### Managing the VM:
+(From the cloned sos_venv dir, see: vagrant -h)
 Using vagrant commands, the box can be:
 - reloaded (w/ or w/o --provision) to apply new Vagrantfile config. 
 - suspended
