@@ -62,9 +62,13 @@ Example exporting a key named 'id_rsa' (this key should be ~/.ssh/ on your host 
     cd sos_venv/
     vagrant ssh
 ``` 
-From within the VM run your commands to build. 
-sos init && sos bld -t raptor
-    
+From within the VM run your commands to build. Example:
+```
+mkdir sandbox
+cd sandbox
+sos init newbuild
+sos bld -t raptor
+```  
     
 ### Managing the VM:
 Using vagrant commands, the box can be:
