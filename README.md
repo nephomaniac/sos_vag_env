@@ -25,7 +25,7 @@ If you dont have them cloned already do this:
     git lfs install
     git lfs clone git@bitbucket.org:smartrg/srg-sources.git /opt/srg-sources
 ```
-Notes:
+Notes:  
     1) You can have multiple srg-source dirs, just make sure you edit the Vagrant file to sync
     the correct one to the VM. See this line: 
     config.vm.synced_folder "/opt/srg-sources", "/opt/srg-sources", create: true.  
