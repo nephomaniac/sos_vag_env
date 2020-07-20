@@ -28,7 +28,7 @@ If you dont have them cloned already do this:
 Notes:
     1) You can have multiple srg-source dirs, just make sure you edit the Vagrant file to sync
     the correct one to the VM. See this line: 
-    config.vm.synced_folder "/opt/srg-sources", "/opt/srg-sources", create: true. 
+    config.vm.synced_folder "/opt/srg-sources", "/opt/srg-sources", create: true.  
     2) The bootstrap.sh script 'should' attempt to clone this repo if this dir doesnt exist on the host, and it 'should' end up on your the
     host sync'd dir ...but hasn't been tested yet. 
 
