@@ -34,10 +34,15 @@ Notes:
 
 
 ## Step#4) Setup SSH for git, etc..  
+This is needed to allow the VM access to private repos. This may require
+executing the 'vagrant provision' command again outside the VM for these changes to take. 
 Vagrant is set to forward the keys so no need to copy to the VM. 
 This requires adding the key(s) you want added to your local ssh-agent. 
 Example exporting a key named 'id_rsa' (this key should be ~/.ssh/ on your host machine)
  ```
+    eval $(ssh-agent) 
+    ssh-add ~/.ssh/id_rsa
+    ...or...
     eval \"$(ssh-agent -s)\"
     ssh-add ~/.ssh/id_rsa" >&2
  ```
